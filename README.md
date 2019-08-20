@@ -1,2 +1,2 @@
-# advancedlistoperations
+# listoperations
 Advanced operations on lists
