@@ -1,14 +1,20 @@
+import operator
+import functools
 
-is_list = lambda e: isinstance(e,list)
-
-def my_listsum(lhs, rhs):
-    if is_list(lhs) == True:
-        return list(map(my_listsum,lhs,rhs))
+def my_listsum_wrapper(lhs, rhs, op):
+    # bind operator-function to function call. Functions are not iterable, so map() would throw an error.
+    return list(map(functools.partial(my_listsum,op=op), lhs, rhs)) # https://stackoverflow.com/questions/10314859/applying-map-for-partial-argument
+    
+def my_listsum(lhs, rhs, op):
+    if isinstance(lhs, list) == True:
+        return my_listsum_wrapper(lhs, rhs, op)
     else: # lhs and rhs are scalars
-        return lhs + rhs
+        return op(lhs, rhs)
+
 
 def my_arbitrarylistsum(lhs, rhs):
-    return list(map(my_listsum,lhs,rhs))
+    return my_listsum_wrapper(lhs, rhs, operator.add)
+
 
 def main():
 	e = [1,2,3,4,[5,6,7,8]]
