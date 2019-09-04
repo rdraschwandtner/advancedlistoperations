@@ -39,12 +39,13 @@ def main():
 	listsub(e, e)
 	listsub(f, g)
 	listsub(g, f)
-    
+    listmul(f,f)
 	listmul(e,e)
 	listmul(f, g)
     
+    listdiv(f,f)
 	listdiv(e,e)
-	listdiv(f, g) 
+	listdiv(f, g)
 
 	# negative tests
 	h = [1,2,3,4,[5,'a',7,8]]

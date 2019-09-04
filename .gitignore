@@ -7,3 +7,4 @@
 *.pyc
 experiments/.ipynb_checkpoints/experiment-map-vs-list-comp-vs-lambda-list-comp-checkpoint.ipynb
 testcases/.ipynb_checkpoints/externaltestcases-checkpoint.py
+testcases/.ipynb_checkpoints/basictestcases-checkpoint.py
