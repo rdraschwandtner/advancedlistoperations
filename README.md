@@ -15,8 +15,10 @@ will result in
 ```
 
 ## Experiments
+Data driven decisions for implementation. E.g. runtime behavior on Kaggle.
+
 Experiments can be found under experiments/ .
-Data driven decisions for implementation.
+
 
 ## Testcases
 Tests in testcases/ need to run through for commits.
