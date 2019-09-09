@@ -1,5 +1,5 @@
 # listoperations
-This package is enhancing Python's built-in list operations 
+This package is enhancing Python's built-in list operations with artithmetic operations while preserving the structure of the lists.
 
 Useage:
 ```Python
@@ -22,3 +22,11 @@ Experiments can be found under experiments/ .
 
 ## Testcases
 Tests in testcases/ need to run through for commits.
+
+## Next steps
+- Scalar as input argument
+- Unary arithmetic operations
+- Comparison operators
+- Handle tuples
+- Handle Series and DataFrames inside of lists
+- Boolean operators
